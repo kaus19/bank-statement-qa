@@ -1,6 +1,8 @@
+pandas
+matplotlib
 PyPDF2
 python-dotenv
-llama_index
-llama_index.llms.ollama
-llama_index.embeddings.huggingface
+llama-index
+ollama
+huggingface-hub
 pycryptodome
