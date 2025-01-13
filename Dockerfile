@@ -6,7 +6,7 @@ ENV JUPYTER_ENABLE_LAB=yes
 
 # Install dependencies first
 COPY requirements.txt /tmp/requirements.txt
-RUN pip install --no-cache-dir -r /tmp/requirements.txt || cat /tmp/requirements.txt
+RUN pip install --no-cache-dir -r /tmp/requirements.txt
 
 # Expose the default Jupyter port
 EXPOSE 8888

@@ -11,15 +11,24 @@ Bank Statements Query Application using local LLMs. Read more [here](https://doc
 - Can answer query based on the data
 - Visualizations of credits and debits
 
+## Assumptions:
+- Input file name like 'statement_01.pdf' where 01 represents the month number
+- Add the environment variables 
+```
+INPUT_PATH="../data/encrypted/"
+OUTPUT_PATH="../data/decrypted/"
+PASSWORD="password"
+```
+
 
 ## Installation
 
 ### 1. Clone the repository:
 
 ```sh
-git clone https://github.com/kaus19/bank-satament-qa.git
+git clone https://github.com/kaus19/bank-statement-qa.git
 
-cd bank-satament-qa
+cd bank-statement-qa
 ```
 
 ### 2. Start the server:
@@ -48,19 +57,19 @@ Notes:
 
 ## Directory Structure:
 
-bank-statement-qa/
-├── Dockerfile
-├── docker-compose.yml
-├── data/
-│   └── decrypted/
-│   └── output/
-├── indexes/
-├── workspace/
-│   └── pre_processing.ipynb
-│   └── dashboard.ipynb
-│   └── query.ipynb
-├── README.md
-├── requirements.txt
+bank-statement-qa/  
+├── Dockerfile  
+├── docker-compose.yml  
+├── data/  
+│   └── decrypted/  
+│   └── output/  
+├── indexes/  
+├── workspace/  
+│   └── pre_processing.ipynb  
+│   └── dashboard.ipynb  
+│   └── query.ipynb  
+├── README.md  
+├── requirements.txt  
 
 
 ## Future Work
